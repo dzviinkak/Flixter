@@ -52,6 +52,7 @@
                                             <outlet property="posterView" destination="I2p-fv-hpz" id="LPK-sH-4N6"/>
                                             <outlet property="synopsisLabel" destination="B0w-C8-nLH" id="VG7-ZZ-0ev"/>
                                             <outlet property="titleLabel" destination="CQc-LY-Akv" id="iEm-ui-o3q"/>
+                                            <segue destination="uSC-Kl-M9l" kind="show" id="BtU-QQ-2Ym"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -68,6 +69,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
+        </scene>
+        <!--Movie Details View Controller-->
+        <scene sceneID="g3j-Y1-TB2">
+            <objects>
+                <viewController id="uSC-Kl-M9l" customClass="MovieDetailsViewController" customModule="flixster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bcw-Re-ob4" customClass="MovieDetailViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mql-Sb-8td"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iXw-et-by6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rDH-bi-H7L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1775" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9mq-ro-MTV">
