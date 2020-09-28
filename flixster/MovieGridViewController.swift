@@ -21,8 +21,8 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
-        layout.minimumLineSpacing = 40
-        layout.minimumInteritemSpacing = 40
+        layout.minimumLineSpacing = 4
+        layout.minimumInteritemSpacing = 4
         // width on rhs refers to the width of a device the progrma is running at
     
         let width = (view.frame.size.width - layout.minimumInteritemSpacing * 2) / 3
