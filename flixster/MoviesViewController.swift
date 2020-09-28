@@ -20,7 +20,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         // calls on 2 functions for tableview
         tableView.dataSource = self
         tableView.delegate = self
-        print("Hello")
         // download the array of moview
         let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -69,11 +68,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         // sets the synopsisLabel to show synopsis from the initial file
         cell.synopsisLabel.text = synopsis
         
+        // w185 sets the width
         let baseUrl = "https://image.tmdb.org/t/p/w185"
         let posterPath = movie["poster_path"] as! String
         // type url() ensures that that the string is formated in the appropriate way (as a real url)
-        let posterUrl = URL(string: baseUrl + posterPath )
+        let posterUrl = URL(string: baseUrl + posterPath)
         cell.posterView.af_setImage(withURL: posterUrl!)
+         
         
         return cell
     }
